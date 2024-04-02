@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 14px;
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: hsl(0, 0%, 8%);
+  color: hsl(0, 0%, 100%);
+}
+main {
+  width: 400px;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: hsl(0, 0%, 12%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+
+  margin: auto 20px;
+}
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+header img {
+  width: 80px;
+  border-radius: 50%;
+}
+header h1 {
+  font-size: 2em;
+}
+header h2 span {
+  font-size: 0.8em;
+  color: hsl(75, 94%, 57%);
+}
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+section h2 {
+  font-size: 1.3em;
+}
+
+section ul {
+  list-style: none;
+  width: 100%;
+  text-align: center;
+}
+section ul li a {
+  text-decoration: none;
+  display: inline-block;
+  color: hsl(0, 0%, 100%);
+  display: block;
+}
+section ul li {
+  margin: 15px 0;
+  padding: 15px 20px;
+  background-color: hsl(0, 0%, 20%);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in;
+}
+section ul li:hover {
+  background-color: hsla(0, 2%, 10%, 0.795);
+}
