@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./assets/images/background-pattern-desktop.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: start;
+  background-color: hsl(275, 100%, 97%);
+  font-family: 'Work Sans', sans-serif;
+  font-size: 16px;
+}
+main {
+  width: 650px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 40px;
+  box-shadow: 0px 10px 60px #2f153352;
+  margin: auto 20px;
+}
+main h1 {
+  display: flex;
+  align-items: center;
+  font-size: 3.4em;
+  gap: 20px;
+  margin: 20px 0;
+}
+main section .content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+  border-bottom: 1px solid #2f153310;
+  padding: 15px 0;
+}
+
+main section .content:last-child {
+  border-bottom: none;
+}
+main section .content .content-title {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  gap: 30px;
+}
+main section .content .content-title p {
+  font-weight: 700;
+}
+
+main section .content .content-text {
+  color: hsl(292, 16%, 49%);
+  display: none;
+  transition: all 0.3s ease-in;
+  font-size: 0.9em;
+  width: 90%;
+  position: relative;
+}
+@media screen and (max-width: 560px) {
+  main h1 {
+    display: flex;
+    align-items: center;
+    font-size: 2.7em;
+    gap: 20px;
+    margin: 20px 0;
+  }
+}
