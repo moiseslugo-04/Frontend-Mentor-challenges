@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  background-color: hsl(0, 0%, 86%);
+}
+main {
+  width: 700px;
+  height: 600px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 20px;
+  border-bottom-right-radius: 200px;
+  padding: 50px;
+  position: relative;
+}
+main form {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  gap: 30px;
+}
+main form label {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  color: hsl(0, 1%, 44%);
+  font-weight: 700;
+  letter-spacing: 3px;
+  font-size: 0.8em;
+  text-transform: uppercase;
+}
+main form label span {
+  font-size: 1em;
+  color: hsl(0, 100%, 67%);
+  letter-spacing: normal;
+  text-transform: lowercase;
+  font-style: italic;
+  font-weight: 400;
+}
+main form input {
+  width: 140px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  outline: hsl(0, 0%, 86%);
+  border: 1px solid hsl(0, 0%, 86%);
+  color: hsl(0, 1%, 44%);
+  font-weight: 700;
+  font-size: 2em;
+  border-radius: 10px;
+  padding: 20px;
+}
+main .icon {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+}
+main .icon .line {
+  width: 100%;
+  height: 1px;
+  border: 1px solid hsl(0, 0%, 86%);
+}
+main .icon img {
+  width: 80px;
+  height: 80px;
+  background-color: hsl(259, 100%, 65%);
+  border-radius: 50%;
+  padding: 20px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in;
+}
+main .icon img:hover {
+  background-color: hsl(259, 48%, 48%);
+}
+main section {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-size: 4.4em;
+  font-weight: 800;
+}
+
+main section span {
+  color: hsl(259, 100%, 65%);
+}
+@media screen and (max-width: 650px) {
+  body {
+    height: 100%;
+  }
+  main {
+    min-width: 350px;
+    height: 500px;
+    gap: 10px;
+    margin: 20px;
+  }
+  main form {
+    gap: 10px;
+  }
+
+  main form input {
+    max-width: 90px;
+    height: 50px;
+    font-size: 1.4em;
+    padding: 20px;
+    margin-bottom: 10px;
+  }
+
+  main section {
+    font-size: 2.7em;
+  }
+  main .icon {
+    justify-content: center;
+  }
+  main .icon img {
+    width: 70px;
+    height: 70px;
+    z-index: 100;
+  }
+  main .icon .line {
+    position: absolute;
+  }
+}
