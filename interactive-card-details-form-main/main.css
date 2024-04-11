@@ -203,10 +203,14 @@ main .completed button {
 }
 
 @media screen and (max-width: 970px) {
+  main {
+    width: 100%;
+    min-height: 800px;
+  }
   main .card .card-front,
   main .card .card-back {
     width: 400px;
-    height: 200px;
+    max-height: 200px;
     border-radius: 12px;
     padding: 20px;
     position: absolute;
@@ -268,6 +272,10 @@ main .completed button {
   }
 }
 @media screen and (max-width: 500px) {
+  main {
+    width: 100%;
+    min-height: 800px;
+  }
   main .card .card-front,
   main .card .card-back {
     width: 310px;
