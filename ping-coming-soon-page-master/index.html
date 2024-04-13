@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <title>Frontend Mentor | Ping coming soon page</title>
+  </head>
+  <body>
+    <div class="content-modal">
+      <div class="modal">
+        <p>Please Completed the form</p>
+        <button id="btn-back">Back</button>
+      </div>
+    </div>
+    <main>
+      <img src="./images/logo.svg" alt="logo" />
+      <h1>We are launching <span>soon!</span></h1>
+      <p>Subscribe and get notified</p>
+      <form action="">
+        <div class="input">
+          <input type="text" placeholder="Your email address..." />
+          <span>Please provide a valid email address</span>
+        </div>
+        <button id="btn-send">Notify Me</button>
+      </form>
+      <div class="banner"></div>
+      <footer>
+        <ul>
+          <li>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </li>
+        </ul>
+        <p>&copy; Copyright Ping. All rights reserved.</p>
+      </footer>
+    </main>
+    <script
+      src="https://kit.fontawesome.com/477b03745b.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      const bntSend = document.getElementById('btn-send')
+      const bntBack = document.getElementById('btn-back')
+      const input = document.querySelector('input')
+      const span = document.querySelector('.input span')
+      let isValid = false
+      input.addEventListener('keyup', (e) => {
+        const regExp = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+        if (!regExp.test(e.target.value) || e.target.value == '') {
+          span.style.opacity = 1
+          isValid = false
+        } else {
+          span.style.opacity = 0
+          isValid = true
+        }
+      })
+      bntSend.addEventListener('click', (e) => {
+        e.preventDefault()
+        console.log('sssss')
+        if (isValid) {
+          document.querySelector('form').reset()
+        } else {
+          console.log('object')
+          document.querySelector('.content-modal').style.display = 'flex'
+        }
+      })
+      bntBack.addEventListener('click', () => {
+        document.querySelector('.content-modal').style.display = 'none'
+      })
+    </script>
+  </body>
+</html>
