@@ -16,7 +16,7 @@ body {
   background-color: hsl(0, 0%, 86%);
   gap: 20px;
 }
-body p {
+.name {
   color: #807a7ae3;
   letter-spacing: 3px;
 }
