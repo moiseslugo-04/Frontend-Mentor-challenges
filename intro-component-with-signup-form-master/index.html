@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <title>Frontend Mentor | Intro component with sign up form</title>
+  </head>
+  <body>
+    <main>
+      <section>
+        <h1>Learn to code by watching others</h1>
+        <p>
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, but understanding how developers think is
+          invaluable.
+        </p>
+      </section>
+      <div class="content">
+        <button><span>Try it free 7 days</span> then $20/mo. thereafter</button>
+        <form>
+          <div class="field">
+            <input type="text" name="name" placeholder="First Name" />
+            <i class="error-icon"
+              ><img src="./images/icon-error.svg" alt=""
+            /></i>
+            <span>First Name cannot be empty</span>
+          </div>
+          <div class="field">
+            <input type="text" name="lastName" placeholder="Last Name" />
+            <i class="error-icon"
+              ><img src="./images/icon-error.svg" alt=""
+            /></i>
+            <span>Last Name cannot be empty</span>
+          </div>
+          <div class="field">
+            <input type="email" name="email" placeholder="Email Address" />
+            <i class="error-icon"
+              ><img src="./images/icon-error.svg" alt=""
+            /></i>
+            <span>Look like this is not an email</span>
+          </div>
+          <div class="field">
+            <input type="password" name="password" placeholder="Password" />
+            <i class="error-icon"
+              ><img src="./images/icon-error.svg" alt=""
+            /></i>
+            <span>Password cannot be empty</span>
+          </div>
+          <button id="btnSend">Claim your free trial</button>
+          <p>
+            By clicking the button, you are agreeing to our
+            <span>Terms and Services</span>
+          </p>
+        </form>
+      </div>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
