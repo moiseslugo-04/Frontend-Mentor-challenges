@@ -7,12 +7,18 @@
 body {
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   font-size: 16px;
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
   background-color: hsl(0, 0%, 86%);
+  gap: 20px;
+}
+body p {
+  color: #807a7ae3;
+  letter-spacing: 3px;
 }
 main {
   width: 700px;
