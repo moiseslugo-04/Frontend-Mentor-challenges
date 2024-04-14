@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 15px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 16px;
+}
+main {
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+main header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main header h1 {
+  font-size: 1.9em;
+  font-weight: 800;
+}
+main header h1 span {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 8px;
+  background-color: hsl(219, 85%, 26%);
+  color: #fff;
+  font-size: 0.9em;
+  margin-left: 2px;
+}
+main header button {
+  border: none;
+  color: hsl(219, 14%, 63%);
+  background-color: transparent;
+  font-size: 1.3em;
+  font-weight: 500;
+}
+main header button:hover {
+  color: hsl(219, 85%, 26%);
+  cursor: pointer;
+}
+
+main section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 16px;
+}
+main section .card {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  border-radius: 12px;
+  background-color: hsl(210, 60%, 98%);
+  gap: 15px;
+  color: hsl(219, 12%, 42%);
+  cursor: pointer;
+}
+main section .card p.time {
+  color: hsl(219, 14%, 63%);
+  padding-top: 4px;
+}
+main section .card > img {
+  width: 50px;
+  height: 50px;
+}
+main section .card span.name {
+  display: inline-block;
+  color: hsl(224, 21%, 14%);
+  font-weight: 800;
+  padding-right: 4px;
+}
+main section .card span.name:hover {
+  color: hsl(219, 85%, 26%);
+  cursor: pointer;
+}
+main section .card span.club {
+  color: hsl(219, 85%, 26%);
+  font-weight: 800;
+  cursor: pointer;
+}
+main section .card b {
+  margin: 0 2px;
+  font-weight: 800;
+}
+main section .card b:hover {
+  color: hsl(219, 85%, 26%);
+  cursor: pointer;
+}
+main section .card span.circle {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: hsl(1, 90%, 64%);
+  border-radius: 50%;
+  margin: 0 10px;
+}
+main section .card-message {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 15px;
+  width: 100%;
+}
+main section .message {
+  display: inline-block;
+  border: 1px solid hsl(219, 12%, 42%);
+  padding: 20px;
+  width: 80%;
+  left: 0;
+  color: hsl(219, 12%, 42%);
+  font-weight: 500;
+  transition: all 0.3s ease-in;
+}
+main section .message:hover {
+  cursor: pointer;
+  border-color: transparent;
+  background-color: hsl(211, 68%, 94%);
+}
+main section .card:nth-child(5) .card-text div {
+  display: flex;
+  gap: 10px;
+}
+main section .card:nth-child(5) .card-text div img {
+  width: 50px;
+  height: 50px;
+}
+
+@media screen and (max-width: 430px) {
+  main header h1 {
+    font-size: 1.5em;
+  }
+
+  main header button {
+    font-size: 1em;
+  }
+}
