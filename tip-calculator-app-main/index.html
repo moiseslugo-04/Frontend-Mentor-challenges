@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Tip calculator app</title>
+  </head>
+  <body>
+    <div class="logo">
+      <img src="./images/logo.svg" alt="" />
+    </div>
+    <main>
+      <section class="calculator">
+        <label>
+          Bill
+          <input type="number" id="bill" placeholder="00.00" />
+          <img src="./images/icon-dollar.svg" alt="icon-dollar" />
+        </label>
+        <div class="tip">
+          <label> Select Tip % </label>
+          <div class="buttons">
+            <button value="5">5%</button>
+            <button value="10">10%</button>
+            <button value="15" class="active">15%</button>
+            <button value="25">25%</button>
+            <button value="50">50%</button>
+            <input type="number" id="custom" placeholder="Custom" />
+          </div>
+        </div>
+        <label>
+          Number of People<span class="messageError">Cant't be zero</span>
+          <input type="number" id="people" placeholder="1" />
+          <img src="./images/icon-person.svg" alt="icon-person" />
+        </label>
+      </section>
+      <section class="result">
+        <div class="result-total">
+          <div class="tip-amount">
+            <div class="text">
+              <p>Tip Amount</p>
+              <span>/ person</span>
+            </div>
+            <p>$<span id="tipAmount">0.00</span></p>
+          </div>
+          <div class="total">
+            <div class="text">
+              <p>Total</p>
+              <span>/ person</span>
+            </div>
+            <p>$<span id="total">0.00</span></p>
+          </div>
+        </div>
+        <button id="reset">Reset</button>
+      </section>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  min-height: 100vh;
+  font-family: 'Space Mono', monospace;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: hsl(185, 41%, 84%);
+  color: hsl(186, 14%, 43%);
+  font-weight: 700;
+  font-size: 18px;
+  gap: 20px;
+  font-size: 18px;
+}
+body .logo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+main {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #fff;
+  font-family: 'Space Mono', monospace;
+  padding: 30px;
+  border-radius: 20px 20px 0 0;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  gap: 30px;
+}
+main .calculator {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+main .result {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+main label {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  gap: 8px;
+  font-family: 'Space Mono', monospace;
+}
+main label input {
+  width: 100%;
+  padding: 15px 10px;
+  border: none;
+  background-color: hsl(189, 41%, 97%);
+  border-radius: 8px;
+  color: hsl(183, 100%, 15%);
+  text-align: end;
+  outline: none;
+  font-size: 24px;
+  font-family: 'Space Mono', monospace;
+  font-weight: 700;
+}
+main label input.error {
+  outline: 2px solid #ff00009c;
+}
+main label input.error:focus {
+  outline: 2px solid #ff00009c;
+}
+main label input::placeholder {
+  color: hsl(183, 100%, 15%);
+}
+main label input:focus {
+  outline: 2px solid hsl(172, 67%, 45%);
+}
+main label img {
+  width: 15px;
+  position: absolute;
+  top: 60%;
+  left: 15px;
+}
+main label span {
+  position: absolute;
+  top: 3px;
+  right: 0;
+  font-size: 0.8em;
+  color: #ff00009c;
+  opacity: 0;
+}
+main .tip {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+main .tip .buttons {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  grid-auto-rows: 50px;
+  justify-content: center;
+  gap: 20px;
+  font-family: 'Space Mono', monospace;
+}
+main .tip .buttons .active {
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+}
+main .tip .buttons button,
+main .tip .buttons input {
+  width: 100%;
+  height: 50px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+  background-color: hsl(183, 100%, 15%);
+  cursor: pointer;
+  font-family: 'Space Mono', monospace;
+  font-weight: 700;
+}
+
+main .tip .buttons button:hover {
+  background-color: #26c0ab81;
+  color: hsl(183, 100%, 15%);
+}
+main .tip .buttons input {
+  background-color: hsl(189, 41%, 97%);
+  text-align: end;
+  padding: 12px 14px;
+  color: hsl(183, 100%, 15%);
+}
+main .tip .buttons input:focus {
+  outline: 2px solid hsl(172, 67%, 45%);
+}
+main .result {
+  width: 100%;
+  height: 100%;
+  background-color: hsl(183, 100%, 15%);
+  padding: 30px;
+  border-radius: 20px;
+  color: #fff;
+  font-family: 'Space Mono', monospace;
+}
+main .result .tip-amount,
+main .result .total {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Space Mono', monospace;
+}
+main .result .tip-amount > p,
+main .result .total > p {
+  font-size: 1.5em;
+  font-family: 'Space Mono', monospace;
+  color: hsl(172, 67%, 45%);
+}
+main .result .text span {
+  color: hsl(184, 14%, 56%);
+}
+main .result .result-total {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+main .result button {
+  width: 100%;
+  border: none;
+  padding: 15px 10px;
+  border-radius: 8px;
+  text-transform: uppercase;
+  color: hsl(183, 100%, 15%);
+  font-size: 1.3em;
+  font-weight: 700;
+  background-color: hsl(172, 67%, 45%);
+  font-family: 'Space Mono', monospace;
+}
+
+@media screen and (min-width: 580px) {
+  body {
+    justify-content: center;
+  }
+  main {
+    width: 80%;
+    height: 100%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+  main .tip .buttons {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(130px, 1fr));
+    grid-auto-rows: 50px;
+    justify-content: center;
+    gap: 20px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  main {
+    width: 900px;
+    min-height: 500px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+}
